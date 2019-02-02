@@ -1,0 +1,162 @@
+// head {
+@__nodeId__: ~"ss_crm_ui__bars_info";
+// }
+
+.@{__nodeId__} {
+
+    .path(
+        @bgColor,
+        @locationBgColor,
+        @locationColor,
+        @infoColor
+    ) {
+        display: flex;
+        background-color: @bgColor;
+
+        > .location {
+            display: flex;
+            align-items: center;
+            padding: 3px;
+            background-color: @locationBgColor;
+            color: @locationColor;
+
+            height: 20px;
+
+            .icon {
+                margin-right: 5px;
+                margin-left: 5px;
+                font-size: 14px;
+                //padding: 3px 0 0;
+            }
+
+            .name {
+                white-space: nowrap;
+                font-size: 12px;
+            }
+        }
+
+        > .angle {
+            width: 0;
+            height: 0;
+            border-top: 13px solid transparent;
+            border-left: 12px solid @locationBgColor;
+            border-bottom: 13px solid transparent;
+        }
+
+        > .info_container {
+            flex-grow: 1;
+            position: relative;
+            overflow: hidden;
+
+            > .info {
+                position: absolute;
+                padding: 3px;
+
+                color: @infoColor;
+
+                display: flex;
+                align-items: center;
+
+                .node {
+                    display: flex;
+                    padding: 3px;
+
+                    white-space: nowrap; //
+
+                    .icon {
+                        margin-right: 3px;
+                        margin-left: 0;
+                        font-size: 8px;
+                        padding: 3px 0 0;
+                        //color: #A0A0A0;
+                    }
+
+                    .name {
+                        white-space: nowrap;
+                    }
+
+                    &:first-child {
+
+                        .icon {
+                            display: none;
+                        }
+                    }
+
+                    &:last-child {
+
+                        .name {
+                            //font-weight: bold;
+                        }
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+
+                        .name {
+                            text-decoration: underline;
+                        }
+
+                        &:last-child {
+                            cursor: default;
+
+                            .name {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    > .cat {
+        .path(
+                #092D56,
+                #1662AF,
+                #6FF7FF,
+                #9EC3DD
+        );
+    }
+
+    > .search {
+        .path(
+                #094956,
+                #0080af,
+                #00FFC6,
+                #80e400
+        );
+    }
+
+    > .filters {
+        padding: 3px;
+
+        background-color: #031621;
+        color: #3FE3FF;
+
+        > .filter {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            > .icon {
+                font-size: 14px;
+                margin: 0 5px;
+                color: #3FE3FF;
+
+                &.sep {
+                    font-size: 9px;
+                }
+            }
+
+            > .division {
+                margin-right: 5px;
+            }
+
+            > .warehouse {
+
+            }
+        }
+    }
+}

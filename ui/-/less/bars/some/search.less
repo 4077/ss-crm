@@ -1,0 +1,123 @@
+// head {
+@__nodeId__: ~"ss_crm_ui__bars_some_search";
+// }
+
+.@{__nodeId__} {
+    position: relative;
+
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+
+    &.hidden {
+        display: none;
+    }
+
+    padding: 6px 6px 6px;
+    background: linear-gradient(#ffffff, #afafaf);
+
+    .input {
+        position: relative;
+        flex-grow: 1;
+        margin: 0;
+
+        //height: 14px;
+
+        input {
+            flex-grow: 1;
+            border-radius: 4px;
+            padding: 6px 8px;
+            border: 0px;
+            color: #312E28;
+            background-color: #FFFFFF;
+            box-sizing: border-box;
+            width: 100%;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5) inset;
+
+            &:focus {
+
+            }
+        }
+
+        > .icon {
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            color: #909090;
+        }
+
+        .submit_button {
+            cursor: pointer;
+            position: absolute;
+            top: 3px;
+            right: 4px;
+            border-radius: 3px;
+            background: linear-gradient(#3FB1D0, #0089AF);
+            color: #9EFFF7;
+            border: 1px solid #0086AB;
+            padding: 4px 6px 4px 9px;
+
+            display: none;
+
+            .container {
+                display: flex;
+
+                > .label {
+                    margin-right: 5px;
+                }
+
+                > .icon {
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+
+            &:hover {
+                background: linear-gradient(#3DA0BE, #007DA0);
+            }
+        }
+    }
+
+    .hint {
+        display: none;
+
+        position: absolute;
+        bottom: -36px;
+        padding: 8px;
+        background: #FFFCCE;
+        border: 1px solid #E6B42E;
+        border-radius: 5px;
+        color: #85681B;
+
+        .pseudo() {
+            bottom: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        &:after {
+            .pseudo;
+
+            border-color: rgba(255, 252, 206, 0);
+            border-bottom-color: #FFFCCE;
+            border-width: 7px;
+            margin-left: -7px;
+        }
+
+        &:before {
+            .pseudo;
+
+            border-color: rgba(230, 180, 46, 0);
+            border-bottom-color: #E6B42E;
+            border-width: 8px;
+            margin-left: -8px;
+        }
+    }
+
+}

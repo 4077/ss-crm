@@ -1,0 +1,102 @@
+// head {
+@import "vars.less";
+// }
+
+@import "vars.less";
+
+body {
+    font-size: 13px;
+    font-family: @fontRegular, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #353535;
+    font-family: @fontHeadersBold;
+}
+
+h1 {
+    margin: 20px 0 12px;
+    font-size: 31px;
+    line-height: 1.5;
+}
+
+h2 {
+    margin: 15px 0 10px;
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+h3 {
+    margin: 10px 0 10px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+h4 {
+    margin: 10px 0 10px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+h5 {
+    margin: 10px 0 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h6 {
+    margin: 10px 0 10px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+li {
+    margin-left: 30px;
+    line-height: 18px;
+}
+
+p {
+    text-align: left;
+    text-indent: 0;
+    line-height: 1.5;
+}
+
+p, ul {
+    margin: 12px 0 0 0;
+}
+
+b, strong {
+    font-family: @fontBold;
+}
+
+i, em {
+    font-family: @fontRegular;
+}
+
+hr {
+    border: 1px solid #EAEAEA;
+    border-top: 0;
+    width: auto;
+    margin: 10px -20px 10px;
+}
+
+.noindent > p {
+    text-indent: 0;
+}
+
+p img {
+    margin: 10px 0;
+    max-width: 100% !important;
+    height: auto;
+    display: block;
+}
+
+a {
+    cursor: pointer;
+    color: #2E74B3;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

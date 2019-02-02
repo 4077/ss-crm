@@ -1,0 +1,134 @@
+// head {
+@__nodeId__: ~"ss_crm_product__quantifyKnob";
+// }
+
+.@{__nodeId__} {
+    position: relative;
+    padding: 30px 40px 10px;
+
+    > .magnitude {
+        cursor: pointer;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        background-color: #87CEEB;
+        padding: 11px;
+        color: #FFF;
+        border-radius: 20px;
+
+        &:hover {
+            background-color: #5FB0CE;
+        }
+
+        &:active {
+            left: 11px;
+            top: 11px;
+        }
+    }
+
+    .magnitude_selector {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+
+        .magnitudes {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+
+            .magnitude {
+                cursor: pointer;
+                background-color: #87CEEB;
+                color: #FFFFFF;
+                padding: 20px 10px;
+                margin: 10px 5px;
+                width: 45%;
+                text-align: center;
+                box-sizing: border-box;
+                font-size: 25px;
+                border-radius: 5px;
+
+                &.selected {
+                    background-color: #3F94C0;
+                }
+
+                &:active {
+                    position: relative;
+                    left: 1px;
+                    top: 1px;
+                }
+            }
+        }
+    }
+
+    .incdec {
+        position: absolute;
+        top: 220px;
+        left: 0px;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+
+        .button {
+            cursor: pointer;
+            background-color: #87CEEB;
+            width: 29px;
+            height: 29px;
+            padding: 11px;
+            color: #FFF;
+            border-radius: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon {
+                font-size: 22px;
+            }
+
+            &:hover {
+                background-color: #5FB0CE;
+            }
+
+            &:active {
+                position: relative;
+                left: 1px;
+                top: 1px;
+            }
+        }
+    }
+
+    .knob {
+
+    }
+
+    .add_button {
+        cursor: pointer;
+        margin-top: 80px;
+        background-color: #75AF56;
+        color: #FFFFFF;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+
+        &:hover {
+            background-color: #54A926;
+        }
+
+        &:active {
+            position: relative;
+            left: 1px;
+            top: 1px;
+        }
+    }
+}

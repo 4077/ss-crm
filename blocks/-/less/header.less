@@ -1,0 +1,97 @@
+// head {
+@__nodeId__: ~"ss_crm_blocks__header";
+// }
+
+.@{__nodeId__} {
+    background-color: #102A83;
+    //height: 100px;
+
+    width: 1200px;
+    max-width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .search {
+        flex-grow: 1;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        padding: 7px 8px 7px;
+
+        .input {
+            flex-grow: 1;
+            margin: 0;
+
+            //height: 14px;
+
+            .icon {
+                position: absolute;
+                width: 13px;
+                height: 13px;
+                top: 15px;
+                right: 16px;
+                background: url("header/magglass.png");
+            }
+
+            input {
+                flex-grow: 1;
+                border-radius: 4px;
+                padding: 6px 8px;
+                border: 0px;
+                color: #312E28;
+                background-color: #FFFFFF;
+                box-sizing: border-box;
+                width: 100%;
+                box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5) inset;
+
+                &:focus {
+
+                }
+            }
+        }
+
+        .hint {
+            display: none;
+
+            position: absolute;
+            bottom: -36px;
+            padding: 8px;
+            background: #FFFCCE;
+            border: 1px solid #E6B42E;
+            border-radius: 5px;
+            color: #85681B;
+
+            .pseudo() {
+                bottom: 100%;
+                left: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+            }
+
+            &:after {
+                .pseudo;
+
+                border-color: rgba(255, 252, 206, 0);
+                border-bottom-color: #FFFCCE;
+                border-width: 7px;
+                margin-left: -7px;
+            }
+
+            &:before {
+                .pseudo;
+
+                border-color: rgba(230, 180, 46, 0);
+                border-bottom-color: #E6B42E;
+                border-width: 8px;
+                margin-left: -8px;
+            }
+        }
+    }
+}

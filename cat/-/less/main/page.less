@@ -1,0 +1,67 @@
+// head {
+@__nodeId__: ~"ss_crm_cat__main_page";
+// }
+
+.@{__nodeId__} {
+
+    .containers {
+
+        .container {
+
+            > .name {
+                padding: 15px;
+                font-size: 21px;
+                font-family: PTSansBold;
+                text-align: center;
+                background: linear-gradient(#E8E8E8, #DEDEDE);
+                border-bottom: 1px solid #D4D4D4;
+                color: #1C445A;
+            }
+
+            > .pages {
+
+                > .page {
+                    cursor: pointer;
+                    margin: 1px 0;
+                    padding: 10px;
+                    border: 1px solid transparent;
+                    border-bottom: 1px solid #E0E0E0;
+
+                    display: flex;
+                    align-items: center;
+
+                    &.parent {
+                        position: relative;
+                        background-color: #FFFFFF;
+                        z-index: 1;
+                    }
+
+                    .icon {
+                        font-size: 50px;
+                        color: #5BADDE;
+                    }
+
+                    .content {
+                        margin-left: 10px;
+
+                        .name {
+                            font-family: PTSansCaptionRegular;
+                            font-size: 14px;
+                            color: #404040;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #F5F5F5;
+                        border: 1px solid #E0E0E0;
+                        border-radius: 4px;
+                    }
+                }
+            }
+
+            .products {
+
+            }
+        }
+    }
+}
