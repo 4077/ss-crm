@@ -23,7 +23,7 @@ class Router extends \Controller implements \ewma\Interfaces\RouterInterface
             $this->route('*')->to('\std\ui\auth login:view');
         }
 
-        $this->route('*')->to('\layouts\notFound~:view');
+        $this->route('*')->to('\std\layouts\notFound~:view');
 
         return $this->routeResponse();
     }
