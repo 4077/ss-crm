@@ -35,7 +35,7 @@ class Main extends \Controller
         $cat = $product->cat;
 
         if ($dev = true) {
-            $this->c('quantifyKnob:view', ['product' => $product]);
+//            $this->c('quantifyKnob:view', ['product' => $product]);
         }
 
         $price = $product->price;

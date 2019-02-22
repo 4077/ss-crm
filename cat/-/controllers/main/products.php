@@ -54,7 +54,7 @@ class Products extends \Controller
             $altPrice = $product->alt_price; // todo ?
 
             // todo в цикле тяжело
-            list($price, $stock, $reserved) = ss()->products->explodeMultisourceCache($product, $divisionId, $warehouseId, true);
+            list($price, $discount, $stock, $reserved) = ss()->products->explodeMultisourceCache($product, $divisionId, $warehouseId, true);
 
             $v->assign([
                            'OFFSET'         => $offset,

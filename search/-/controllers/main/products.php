@@ -30,7 +30,7 @@ class Products extends \Controller
             $price = $product->price; // todo del
             $altPrice = $product->alt_price; // todo ?
 
-            list($price, $stock, $reserved) = ss()->products->explodeMultisourceCache($product, 0, 0, true);
+            list($price, $discount, $stock, $reserved) = ss()->products->explodeMultisourceCache($product, 0, 0, true);
 
             $v->assign([
                            'TREE_NAME' => $svc->getTreeName($product),
