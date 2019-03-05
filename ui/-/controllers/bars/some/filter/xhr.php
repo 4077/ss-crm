@@ -37,7 +37,7 @@ class Xhr extends \Controller
 
         if (!$divisionId) {
             if ($warehouse = \ss\multisource\models\Warehouse::find($warehouseId)) {
-                $divisionId = $warehouse->target_id;
+                $divisionId = $warehouse->division_id;
 
                 ap($this->s, 'filters/multisource/division_id', $divisionId);
             }

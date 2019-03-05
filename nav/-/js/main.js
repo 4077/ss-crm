@@ -1,3 +1,8 @@
+// head {
+var __nodeId__ = "ss_crm_nav__main";
+var __nodeNs__ = "ss_crm_nav";
+// }
+
 (function (__nodeNs__, __nodeId__) {
     $.widget(__nodeNs__ + "." + __nodeId__, $.ewma.node, {
         options: {},
